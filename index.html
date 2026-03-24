@@ -268,9 +268,9 @@
       const payload = { industry_name };
       renderEmpty();
 
-      setStatus("请求发送中...", "");
+      setStatus("生成中... 同志你好，预计需要等待四分钟左右", "");
       sendBtn.disabled = true;
-      sendBtn.textContent = "发送中...";
+      sendBtn.textContent = "生成中...";
 
       try {
         const response = await fetch(API_URL, {
