@@ -36,6 +36,7 @@ def serve_index() -> FileResponse:
 
 
 @app.post("/api/run")
+@app.post("/run")
 def run_api(req: RunRequest) -> Dict[str, Any]:
     if not API_TOKEN:
         raise HTTPException(status_code=500, detail="服务端未配置 COZE_API_TOKEN")
