@@ -13,7 +13,7 @@ load_dotenv()
 
 API_URL = "https://832fcrwjv4.coze.site/run"
 API_TOKEN = os.getenv("COZE_API_TOKEN")
-TIMEOUT = (10, 180)  # connect, read
+TIMEOUT = (10, 360)  # connect, read
 
 app = FastAPI(title="Industry Analysis API Proxy")
 
